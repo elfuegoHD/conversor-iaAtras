@@ -1,0 +1,59 @@
+{
+  "format": "layers-model",
+  "generatedBy": "tfjs-layers 4.17.0",
+  "convertedBy": "custom",
+  "modelTopology": {
+    "keras_version": "3",
+    "backend": "tensorflow",
+    "model_config": {
+      "class_name": "Sequential",
+      "config": {
+        "name": "celsius_to_fahrenheit",
+        "layers": [
+          {
+            "class_name": "InputLayer",
+            "config": {
+              "batch_input_shape": [null, 1],
+              "dtype": "float32",
+              "name": "input"
+            }
+          },
+          {
+            "class_name": "Dense",
+            "config": {
+              "name": "dense",
+              "units": 1,
+              "activation": "linear",
+              "use_bias": true,
+              "kernel_initializer": {
+                "class_name": "Zeros",
+                "config": {}
+              },
+              "bias_initializer": {
+                "class_name": "Zeros",
+                "config": {}
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "weightsManifest": [
+    {
+      "paths": ["group1-shard1of1.bin"],
+      "weights": [
+        {
+          "name": "dense/kernel",
+          "shape": [1, 1],
+          "dtype": "float32"
+        },
+        {
+          "name": "dense/bias",
+          "shape": [1],
+          "dtype": "float32"
+        }
+      ]
+    }
+  ]
+}
